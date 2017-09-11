@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.ujung.projectm.dao.MessageDao">
+
+    <select id="selectMessages" resultType="me.ujung.projectm.model.Message">
+        SELECT
+          id AS id,
+          msg AS message
+        FROM
+          projectm_msg
+    </select>
+
+</mapper>
